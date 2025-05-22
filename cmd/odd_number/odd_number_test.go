@@ -41,4 +41,14 @@ func TestOddNumber(t *testing.T) {
 			t.Error("Expected 4, but got", result)
 		}
 	})
+
+	t.Run("should panic when there is no odd number of times", func(t *testing.T) {
+		input := []int{1, 1}
+		defer func() {
+			if r := recover(); r == nil {
+				t.Error("Expected panic, but got none")
+			}
+		}()
+		OddNumber(input)
+	})
 }
