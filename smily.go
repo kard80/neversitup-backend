@@ -25,7 +25,7 @@ func CountSmileys(inputs []string) int {
 	return result
 }
 
-// input must be 2 characters
+// input always be 2 characters
 func handleSmiley(input string) bool {
 	eyes := input[0:1]
 	mount := input[1:2]
@@ -33,7 +33,7 @@ func handleSmiley(input string) bool {
 	return isValidEyes(eyes) && isValidMounth(mount)
 }
 
-// input must be 3 characters
+// input always be 3 characters
 func handleSmileyWithNose(input string) bool {
 	eyes := input[0:1]
 	nose := input[1:2]
