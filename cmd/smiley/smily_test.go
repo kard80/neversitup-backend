@@ -137,7 +137,7 @@ func TestIsValidNose(t *testing.T) {
 		}
 	})
 
-	t.Run("should return true when nose is not - or ~", func(t *testing.T) {
+	t.Run("should return false when nose is not - or ~", func(t *testing.T) {
 		input := "/"
 		result := isValidNose(input)
 		if result != false {
