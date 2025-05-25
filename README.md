@@ -2,7 +2,7 @@
 
 My lasted project is an APIs service base on Nest.js framework. let see the brief of my project structure.
 
-```json
+```
 root
 |-package.json
 |-tsconfig.json
